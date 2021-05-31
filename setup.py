@@ -20,7 +20,7 @@ prefixes = ['U!', 'u!']
 
 # Defining Functions
 def is_dev(context):
-    return context.author.id == dev
+    return context.author.id == int(dev)
 
 
 def get_prefix(client, message):

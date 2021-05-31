@@ -25,7 +25,7 @@ class Colours(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         # Fetch role
-        rgb_role = self.client.get_guild(guild_id).get_role(rgb_role_id)
+        rgb_role = self.client.get_guild(int(guild_id)).get_role(int(rgb_role_id))
 
         # Adding colours
         colours = [
