@@ -10,7 +10,7 @@ from discord.ext import commands
 # Load environment variables
 load_dotenv()
 token = os.getenv("TOKEN")
-dev = int(os.getenv("DEV_ID"))
+dev = os.getenv("DEV_ID")
 activity = os.getenv("ACTIVITY")
 
 # List of prefixes

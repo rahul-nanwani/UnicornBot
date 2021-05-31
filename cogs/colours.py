@@ -7,8 +7,8 @@ from discord.ext import commands
 
 # Load environment variables
 load_dotenv()
-guild_id = int(os.getenv("GUILD_ID"))
-rgb_role_id = int(os.getenv("RGB_ROLE_ID"))
+guild_id = os.getenv("GUILD_ID")
+rgb_role_id = os.getenv("RGB_ROLE_ID")
 
 # Display role separately (Set this value to False if you don't want the role to be displayed separately)
 hoist = True
